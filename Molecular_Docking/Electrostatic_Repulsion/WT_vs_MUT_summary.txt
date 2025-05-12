@@ -1,0 +1,5 @@
+Difference in Electrostatic Potentials (MUT - WT):
+------------------------------------------------------
+Min Difference: -862.746
+Max Difference: 770.719
+Mean Difference: 0.013852

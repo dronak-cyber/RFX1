@@ -1,0 +1,14 @@
+Analyzing potential values...
+-----------------------------------
+Min / Max / Mean electrostatic potentials:
+Min: -1.150342e+03 
+Max: origin 
+Mean: -1.13403
+
+Highly positive regions (> +10.0):
+58819
+
+Highly negative regions (< -10.0):
+57178
+
+Histogram saved to potential_histogram.png

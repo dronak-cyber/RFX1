@@ -1,0 +1,91 @@
+from pymol import cmd
+import os
+
+output_path = "/home/zero/RFX1/Molecular_Docking/analysis_output.txt"
+pdb_output_path = "/home/zero/RFX1/Molecular_Doc0king/Output/final_structure.pdb"
+
+def log(text):
+    with open(output_path, "a") as f:
+        f.write(text + "\n")
+
+# Clear log before starting
+open(output_path, "w").close()
+
+# CMD 1
+log("CMD 1: Loading structure...")
+cmd.load("/home/zero/RFX1/Molecular_Docking/Input/TF_structure_mutations.pdb")
+log("Structure loaded.\n")
+
+# CMD 2
+log("CMD 2: Listing all chains:")
+chains = set()
+cmd.iterate("all", "chains.add(chain)", space={"chains": chains})
+for ch in chains:
+    log(f"  Chain: {ch}")
+log("Chain listing complete.\n")
+
+# CMD 3
+log("CMD 3: Selecting TF (chain P)...")
+cmd.select("TF", "chain P")
+log("TF selection created.\n")
+
+# CMD 4
+log("CMD 4: Selecting DNA (chain D)...")
+cmd.select("DNA", "chain D")
+log("DNA selection created.\n")
+
+# CMD 5: Hydrogen Bonds
+log("CMD 5: Measuring hydrogen bonds...")
+cmd.select("donors", "TF and name N*")
+cmd.select("acceptors", "DNA and name O*")
+cmd.distance("hbonds", "donors", "acceptors", 3.5)
+hbonds = cmd.get_distances("donors", "acceptors", mode=1)
+log(f"Hydrogen Bonds Found: {len(hbonds)}")
+for i, d in enumerate(hbonds):
+    log(f"  H-Bond {i+1}: Distance = {d:.2f} Å")
+log("Hydrogen bond analysis complete.\n")
+
+# CMD 6
+log("CMD 6: Selecting positive residues (ARG, LYS)...")
+cmd.select("pos_res", "(resn ARG+LYS) and chain P")
+log("Positive residues selected.\n")
+
+# CMD 7
+log("CMD 7: Selecting negative residues (phosphate oxygens)...")
+cmd.select("neg_res", "(name OP1+OP2+O1P+O2P) and chain D")
+log("Negative residues selected.\n")
+
+# CMD 8: Salt Bridges
+log("CMD 8: Measuring salt bridges...")
+cmd.select("pos_atoms", "pos_res and name NH*+NZ")
+cmd.select("neg_atoms", "neg_res")
+cmd.distance("salt_bridges", "pos_atoms", "neg_atoms", 4.0)
+salts = cmd.get_distances("pos_atoms", "neg_atoms", mode=1)
+log(f"Salt Bridges Found: {len(salts)}")
+for i, d in enumerate(salts):
+    log(f"  Salt Bridge {i+1}: Distance = {d:.2f} Å")
+log("Salt bridge analysis complete.\n")
+
+# CMD 9
+log("CMD 9: Selecting hydrophobic residues in TF...")
+cmd.select("hydrophobic_TF", "(resn ALA+VAL+LEU+ILE+MET+PHE+TRP+PRO) and chain P")
+log("Hydrophobic TF residues selected.\n")
+
+# CMD 10
+log("CMD 10: Selecting hydrophobic residues in DNA...")
+cmd.select("hydrophobic_DNA", "(resn DA+DT+DG+DC) and chain D")
+log("Hydrophobic DNA residues selected.\n")
+
+# CMD 11: Hydrophobic Contacts
+log("CMD 11: Measuring hydrophobic contacts (within 4.0 Å)...")
+cmd.distance("hydrophobic_contacts", "hydrophobic_TF", "hydrophobic_DNA", 4.0)
+contacts = cmd.get_distances("hydrophobic_TF", "hydrophobic_DNA", mode=1)
+log(f"Hydrophobic Contacts Found: {len(contacts)}")
+for i, d in enumerate(contacts):
+    log(f"  Contact {i+1}: Distance = {d:.2f} Å")
+log("Hydrophobic contact analysis complete.\n")
+
+# Save final PDB
+log("Saving final PDB structure...")
+cmd.save(pdb_output_path)
+log(f"PDB saved to {pdb_output_path}")

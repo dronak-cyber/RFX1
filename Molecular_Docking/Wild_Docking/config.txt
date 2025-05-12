@@ -1,0 +1,14 @@
+receptor = Wild_Protein.pdbqt
+ligand = Wild_DNA.pdbqt
+
+center_x = 38.6266
+center_y = 38.2328
+center_z = 20.8931
+
+size_x = 30
+size_y = 30
+size_z = 30
+
+exhaustiveness = 8
+num_modes = 10
+energy_range = 4

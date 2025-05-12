@@ -1,0 +1,53 @@
+Steric Clash Analysis Log
+
+--- Step 1: load(/home/zero/RFX1/Molecular_Docking/Input/TF_structure.pdb, wt) ---
+
+--- Step 2: load(/home/zero/RFX1/Molecular_Docking/Input/TF_structure_mutations.pdb, mut) ---
+
+--- Step 3: align(mut, wt) ---
+Result: (0.0, 1013, 0, 0.0, 1013, 513.0, 144)
+
+--- Step 4: select(wt_TF, wt and chain P) ---
+Result: 714
+
+--- Step 5: select(wt_DNA, wt and chain D) ---
+Result: 374
+
+--- Step 6: select(mut_TF, mut and chain P) ---
+Result: 714
+
+--- Step 7: select(mut_DNA, mut and chain D) ---
+Result: 374
+
+--- Step 8: select(clashes, (mut_TF within 3.0 of mut_DNA)) ---
+Result: 18
+
+--- Step 9: distance(close_contacts, mut_TF, mut_DNA, 3.0) ---
+Result: 2.8325955867767334
+
+--- Step 10: label(clashes, resn + resi + name) ---
+
+--- Step 11: color(red, clashes) ---
+
+--- Step 12: color(yellow, close_contacts) ---
+
+--- Steric Clash Distance Report ---
+ARG19/NH1 (mut) --> BRU9/OP2 (mut) = 2.73 Å
+ARG19/NH1 (mut) --> HOH30/O (mut) = 2.78 Å
+ARG19/NH2 (mut) --> HOH30/O (mut) = 2.98 Å
+LYS45/NZ (mut) --> DC6/O2 (mut) = 2.98 Å
+ARG48/CZ (mut) --> HOH27/O (mut) = 2.97 Å
+ARG48/NH1 (mut) --> HOH27/O (mut) = 2.98 Å
+ARG58/NE (mut) --> HOH28/O (mut) = 2.97 Å
+ARG58/NH1 (mut) --> DG11/O6 (mut) = 2.67 Å
+LYS66/NZ (mut) --> DG10/OP1 (mut) = 2.88 Å
+TYR67/N (mut) --> HOH23/O (mut) = 2.87 Å
+TYR67/OH (mut) --> DG10/N7 (mut) = 2.74 Å
+TYR69/OH (mut) --> DA8/OP1 (mut) = 2.67 Å
+HOH504/O (mut) --> HOH35/O (mut) = 2.83 Å
+HOH507/O (mut) --> HOH24/O (mut) = 2.74 Å
+HOH512/O (mut) --> DG10/O6 (mut) = 2.86 Å
+HOH532/O (mut) --> HOH19/O (mut) = 2.96 Å
+HOH552/O (mut) --> HOH35/O (mut) = 2.72 Å
+HOH572/O (mut) --> HOH33/O (mut) = 2.85 Å
+HOH578/O (mut) --> HOH48/O (mut) = 2.63 Å

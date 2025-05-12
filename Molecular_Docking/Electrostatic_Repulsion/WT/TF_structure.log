@@ -1,0 +1,53 @@
+2025-04-23 12:36:17,022 INFO:main.py:246:print_splash_screen:PDB2PQR v3.7.1: biomolecular structure conversion software.
+2025-04-23 12:36:17,023 INFO:main.py:248:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2025-04-23 12:36:17,023 INFO:main.py:248:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2025-04-23 12:36:17,023 INFO:main.py:770:main_driver:Checking and transforming input arguments.
+2025-04-23 12:36:17,023 INFO:main.py:774:main_driver:Loading topology files.
+2025-04-23 12:36:17,053 INFO:main.py:776:main_driver:Loading molecule: /home/zero/RFX1/Molecular_Docking/Input/TF_structure.pdb
+2025-04-23 12:36:17,056 INFO:main.py:781:main_driver:Setting up molecule.
+2025-04-23 12:36:17,057 WARNING:biomolecule.py:995:create_residue:Unable to find amino or nucleic acid definition for BRU.  Parsing as new residue.
+2025-04-23 12:36:17,057 WARNING:biomolecule.py:995:create_residue:Unable to find amino or nucleic acid definition for BRU.  Parsing as new residue.
+2025-04-23 12:36:17,059 WARNING:biomolecule.py:995:create_residue:Unable to find amino or nucleic acid definition for EDO.  Parsing as new residue.
+2025-04-23 12:36:17,059 WARNING:biomolecule.py:995:create_residue:Unable to find amino or nucleic acid definition for EDO.  Parsing as new residue.
+2025-04-23 12:36:17,059 WARNING:biomolecule.py:995:create_residue:Unable to find amino or nucleic acid definition for PEG.  Parsing as new residue.
+2025-04-23 12:36:17,060 INFO:main.py:423:setup_molecule:Created biomolecule object with 219 residues and 1088 atoms.
+2025-04-23 12:36:17,060 INFO:main.py:785:main_driver:Setting termini states for biomolecule chains.
+2025-04-23 12:36:17,063 INFO:main.py:616:non_trivial:Loading forcefield.
+2025-04-23 12:36:17,081 INFO:main.py:620:non_trivial:Loading hydrogen topology definitions.
+2025-04-23 12:36:17,085 INFO:main.py:474:is_repairable:This biomolecule is clean.  No repair needed.
+2025-04-23 12:36:17,085 INFO:main.py:635:non_trivial:Updating disulfide bridges.
+2025-04-23 12:36:17,085 INFO:main.py:638:non_trivial:Debumping biomolecule.
+2025-04-23 12:36:17,139 INFO:main.py:661:non_trivial:Adding hydrogens to biomolecule.
+2025-04-23 12:36:17,139 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:biomolecule.py:378:add_hydrogens:Tetrahedral hydrogen reconstruction not available for nucleic acids. Some hydrogens may be missing (if so, this is a bug).
+2025-04-23 12:36:17,140 WARNING:io.py:44:filter:Suppressing further "Tetrahedral hydrogen reconstruction" messages
+2025-04-23 12:36:17,236 INFO:main.py:664:non_trivial:Debumping biomolecule (again).
+2025-04-23 12:36:17,499 INFO:main.py:666:non_trivial:Optimizing hydrogen bonds
+2025-04-23 12:36:17,697 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: O in HOH D 38 skipped when optimizing O in HOH D 32
+2025-04-23 12:36:17,995 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: H1 in HOH D 34 skipped when optimizing H1 in HOH D 18
+2025-04-23 12:36:17,996 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: H1 in HOH D 34 skipped when optimizing H1 in HOH D 18
+2025-04-23 12:36:17,997 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: LP2 in HOH D 18 skipped when optimizing H2 in HOH D 34
+2025-04-23 12:36:17,998 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: LP2 in HOH D 18 skipped when optimizing H2 in HOH D 34
+2025-04-23 12:36:17,999 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: LP2 in HOH D 18 skipped when optimizing H2 in HOH D 34
+2025-04-23 12:36:18,000 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: LP2 in HOH D 18 skipped when optimizing H2 in HOH D 34
+2025-04-23 12:36:18,001 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: LP2 in HOH D 18 skipped when optimizing H2 in HOH D 34
+2025-04-23 12:36:18,002 WARNING:debump.py:361:get_closest_atom:Skipped atom during water optimization: LP2 in HOH D 18 skipped when optimizing H2 in HOH D 34
+2025-04-23 12:36:18,003 WARNING:io.py:44:filter:Suppressing further "Skipped atom during water optimization" messages
+2025-04-23 12:36:22,607 INFO:main.py:678:non_trivial:Applying force field to biomolecule states.
+2025-04-23 12:36:22,607 WARNING:biomolecule.py:744:apply_force_field:Residue DC D 1 has non-integer charge: -0.3079 deviates by 0.3079 from integral, exceeding error tolerance 0.001. 
+2025-04-23 12:36:22,609 WARNING:biomolecule.py:744:apply_force_field:Residue DG D 16 has non-integer charge: -0.6921 deviates by 0.30789999999999995 from integral, exceeding error tolerance 0.001. 
+2025-04-23 12:36:22,612 WARNING:main.py:711:non_trivial:Residue DC D 1 has non-integer charge:  -0.3079 deviates by 0.3079 from integral, exceeding error tolerance 0.001
+2025-04-23 12:36:22,613 WARNING:main.py:711:non_trivial:Residue DG D 16 has non-integer charge:  -0.6921 deviates by 0.30789999999999995 from integral, exceeding error tolerance 0.001
+2025-04-23 12:36:22,614 INFO:main.py:725:non_trivial:Regenerating headers.
+2025-04-23 12:36:22,616 INFO:main.py:750:non_trivial:Regenerating PDB lines.
+2025-04-23 12:36:22,624 WARNING:main.py:326:print_pqr:Ignoring 2437 header lines in output.
+2025-04-23 12:36:22,624 WARNING:main.py:330:print_pqr:Ignoring 55 missing lines in output.
+2025-04-23 12:36:22,632 WARNING:main.py:369:print_pdb:Ignoring 2437 header lines in output.
+2025-04-23 12:36:22,632 WARNING:main.py:373:print_pdb:Ignoring 55 missing lines in output.

@@ -1,0 +1,44 @@
+
+[Hydrogen Bonds]
+H-Bond 1: ARG19-NH1 (chain P) <--> BRU9-OP2 (chain D) | Distance: 2.73 Å
+H-Bond 2: ARG19-NH1 (chain P) <--> HOH30-O (chain D) | Distance: 2.78 Å
+H-Bond 3: ARG19-NH2 (chain P) <--> HOH30-O (chain D) | Distance: 2.98 Å
+H-Bond 4: LYS45-NZ (chain P) <--> DC6-O4' (chain D) | Distance: 3.19 Å
+H-Bond 5: LYS45-NZ (chain P) <--> DC6-O2 (chain D) | Distance: 2.98 Å
+H-Bond 6: ARG48-NE (chain P) <--> DA8-OP1 (chain D) | Distance: 3.20 Å
+H-Bond 7: ARG48-NE (chain P) <--> HOH27-O (chain D) | Distance: 3.17 Å
+H-Bond 8: ARG48-NH1 (chain P) <--> DA8-OP1 (chain D) | Distance: 3.30 Å
+H-Bond 9: ARG48-NH1 (chain P) <--> DA8-OP2 (chain D) | Distance: 3.35 Å
+H-Bond 10: ARG48-NH1 (chain P) <--> HOH27-O (chain D) | Distance: 2.98 Å
+H-Bond 11: ARG58-NE (chain P) <--> HOH28-O (chain D) | Distance: 2.97 Å
+H-Bond 12: ARG58-NH1 (chain P) <--> DG11-O6 (chain D) | Distance: 2.67 Å
+H-Bond 13: ARG58-NH2 (chain P) <--> HOH28-O (chain D) | Distance: 3.01 Å
+H-Bond 14: ARG58-NH2 (chain P) <--> HOH29-O (chain D) | Distance: 3.50 Å
+H-Bond 15: ARG62-NH1 (chain P) <--> HOH62-O (chain D) | Distance: 3.38 Å
+H-Bond 16: LYS66-NZ (chain P) <--> DG10-OP1 (chain D) | Distance: 2.88 Å
+H-Bond 17: LYS66-NZ (chain P) <--> HOH23-O (chain D) | Distance: 3.22 Å
+H-Bond 18: TYR67-N (chain P) <--> HOH23-O (chain D) | Distance: 2.87 Å
+Total: 18
+
+[Salt Bridges]
+Salt Bridge 1: ARG19-NH1 (chain P) <--> DA8-OP1 (chain D) | Distance: 3.68 Å
+Salt Bridge 2: ARG19-NH1 (chain P) <--> DA8-OP2 (chain D) | Distance: 3.81 Å
+Salt Bridge 3: ARG19-NH1 (chain P) <--> BRU9-OP2 (chain D) | Distance: 2.73 Å
+Salt Bridge 4: ARG19-NH2 (chain P) <--> DA8-OP1 (chain D) | Distance: 3.99 Å
+Salt Bridge 5: ARG48-NH1 (chain P) <--> DA8-OP1 (chain D) | Distance: 3.30 Å
+Salt Bridge 6: ARG48-NH1 (chain P) <--> DA8-OP2 (chain D) | Distance: 3.35 Å
+Salt Bridge 7: LYS66-NZ (chain P) <--> DG10-OP1 (chain D) | Distance: 2.88 Å
+Total: 7
+
+[Hydrophobic Contacts]
+Hydrophobic Contact 1: ALA40-O (chain P) <--> DA8-C5' (chain D) | Distance: 3.78 Å
+Hydrophobic Contact 2: ALA40-O (chain P) <--> DA8-C4' (chain D) | Distance: 3.81 Å
+Hydrophobic Contact 3: ALA41-N (chain P) <--> DA8-O4' (chain D) | Distance: 3.95 Å
+Hydrophobic Contact 4: ALA41-CA (chain P) <--> DC7-C2' (chain D) | Distance: 3.83 Å
+Hydrophobic Contact 5: ALA41-CA (chain P) <--> DA8-C4' (chain D) | Distance: 3.83 Å
+Hydrophobic Contact 6: ALA41-CA (chain P) <--> DA8-O4' (chain D) | Distance: 3.35 Å
+Hydrophobic Contact 7: ALA41-O (chain P) <--> DC7-C2' (chain D) | Distance: 3.46 Å
+Hydrophobic Contact 8: ALA41-O (chain P) <--> DC7-C1' (chain D) | Distance: 3.95 Å
+Hydrophobic Contact 9: ALA41-CB (chain P) <--> DC7-O2 (chain D) | Distance: 3.40 Å
+Hydrophobic Contact 10: ALA41-CB (chain P) <--> DA8-O4' (chain D) | Distance: 3.65 Å
+Total: 10

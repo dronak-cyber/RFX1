@@ -1,0 +1,3 @@
+Wild-Type Binding Affinity: -0.4 kcal/mol
+Mutant Binding Affinity: -0.6 kcal/mol
+Difference: .2 kcal/mol
